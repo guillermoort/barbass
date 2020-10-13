@@ -1,84 +1,54 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>ESTA ES MI INTRODUCCION</title>
-  </head>
+<head>
+  <title></title>
+  <script>
+function comprobarClave(){
+      clave1 = document.f1.clave1.value
+      clave2 = document.f1.clave2.value
 
-<body background="fondo1.jpg" bgcolor="5DFF00">
+      if (clave1 == "Guillermo" && clave2 == "ortiz"){
+      alert("los datos coinciden...\n Pase adelante.");
+      var href ="index.html";
+      window.location=href;
+    }
 
-    <a
+    else{
+      alert("las dos claves son distintas...\n intente nuevamente.");
+      var href = "dos.html";
+      window.location=href;
+    };
 
-    href="dos.html">
+  }
+</script>
+</head>
 
-      Home
+<body background="fondos18.jpg" bgcolor="339900">
 
-    </a>
+  <article id="grt">
 
-     &nbsp;
+ <br>   
+    <center><h1><font size="10" COLOR="blue">VALIDAR SOLO SI EL USUARIO Y CONTRASEÑA COINCIDEN</font></h1></center>
+  <center><br>
+    <center><h1><font size="5" COLOR="blue">escribe una supuesta contraseña dos veces una en cada campo, y pulsa el boton. JavaScript te dira si las dos.</font></center>  
+</article>
+</section>
+</nav>
 
-    <a
+  <br>
+  <form action="" name="f1" style="text-align: center;text-indent: unset; ">
+    USUARIO:<br> <input type="password" name ="clave1" size="20">
+    <br>
+    PON TU CLAVE: <br> <input type="password" name ="clave2" size="20">
+    <br>
+    <input type="button" value=" Verificar si son iguales "  onclick="comprobarClave()  "
+    <center><p><font size="5" COLOR="blue">Usuario</font>:Guillermo  <br> clave:ortiz </p></center>
 
-    href="aboutme.html">
+  </form>
 
-      About me
+</article>
+</section>
+</center>    
 
-    </a>
-        &nbsp;
-    &nbsp;
-
-
-   
-    <a
-
-    href="servicios.html" class="greenlink">
-
-    productos
-    </a>
-
-
-    &nbsp;
-
-    <a
-
-    href="contactame.html" class="greenlink">
-
-      Contact me
-
-    </a>
-
-    &nbsp;
-    &nbsp;
-
-
-   
-    <a
-
-    href="registrodeclientes.html" class="greenlink">
-
-      registro de los clientes
-
-    </a>
-
- 
-
-    </hr>
-
-  <div class="container">
-
-    <h1>SERVICIOS
-      <ul>
-<li>servicios </li>
-<li>zlunes a vierenes</li>
-<li>de 6 am a 9 pm</li>
-<li>y sabados media noche</li>
-</ul>
-<h2>Somos una empresa muy seria para trabajar y tener las cosas al instante cuando las personas los necesiten siempre y cuando no tengamos </h2>
- <img
-    src="pelotass.jpg"
-    width="25%"
- />
- 
-
-  </body>
-
-</html>
-
+ </body>
+ </html>
